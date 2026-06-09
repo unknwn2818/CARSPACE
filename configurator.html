@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Configure a DriveSpace electric or hybrid vehicle by choosing colour, trim and optional packages.">
+  <title>Configurator | DriveSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header"><div class="container navbar"><a class="logo-link" href="index.html"><img src="assets/logo.svg" alt="DriveSpace"></a><button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false">Menu</button><nav aria-label="Main navigation"><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="vehicles.html">Vehicles</a></li><li><a href="configurator.html" aria-current="page">Configurator</a></li><li><a href="compare.html">Compare</a></li><li><a href="finance.html">Finance</a></li><li><a class="nav-cta" href="book.html">Book Test Drive</a></li></ul></nav></div></header>
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Car configurator</p>
+        <h1>Build a car that matches your needs.</h1>
+        <p>The configurator lets users choose a vehicle, colour, trim and package. The summary updates immediately so users receive clear feedback.</p>
+      </div>
+
+      <div class="builder">
+        <form class="form-shell" id="configuratorForm" aria-label="Vehicle configurator">
+          <!-- Configurator inputs update the preview and price summary -->
+          <div class="form-group">
+            <label for="configCar">Vehicle</label>
+            <select id="configCar"><option value="aurora">Aurora E1</option><option value="nova">Nova Hybrid</option><option value="pulse">Pulse R</option><option value="summit">Summit X</option></select>
+          </div>
+          <div class="form-group">
+            <label for="configColour">Exterior colour</label>
+            <select id="configColour"><option>Glacier White</option><option>Midnight Blue</option><option>Electric Cyan</option></select>
+          </div>
+          <div class="form-group">
+            <label for="configTrim">Interior trim</label>
+            <select id="configTrim">
+              <option value="0">Standard cloth - included</option>
+              <option value="950">Eco leather - +£950</option>
+              <option value="1450">Premium comfort - +£1,450</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="configPack">Optional package</label>
+            <select id="configPack">
+              <option value="0">No package - included</option>
+              <option value="1200">Technology pack - +£1,200</option>
+              <option value="1850">Winter pack - +£1,850</option>
+              <option value="2300">Driver assist pack - +£2,300</option>
+            </select>
+          </div>
+          <p class="help-text">Prices are estimates and are used to show the website feature.</p>
+        </form>
+
+        <div class="car-preview">
+          <div>
+            <h2>Live preview</h2>
+            <div class="preview-car-shape" id="previewShape" aria-label="Vehicle colour preview">
+              <span class="wheel left" aria-hidden="true"></span>
+              <span class="wheel right" aria-hidden="true"></span>
+            </div>
+            <div id="configSummary" aria-live="polite"><h3>Your Aurora E1</h3><p><strong>Colour:</strong> Glacier White</p><p><strong>Trim:</strong> Standard trim</p><p><strong>Package:</strong> Essential pack</p><p class="big-number">£38,990</p><p class="muted">Estimated price before finance options.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><img src="assets/logo.svg" alt="DriveSpace" style="width:160px"><p>Configure electric and hybrid vehicles before visiting.</p></div><div><h3>Explore</h3><p><a href="vehicles.html">Vehicles</a></p><p><a href="compare.html">Compare</a></p></div><div><h3>Tools</h3><p><a href="finance.html">Finance</a></p><p><a href="book.html">Booking</a></p></div><div><h3>Support</h3><p><a href="contact.html">Contact</a></p></div></div>  <p class="footer-credit">Made by Mohammed Msadek</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

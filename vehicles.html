@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse DriveSpace electric and hybrid vehicles with filters for price, range and vehicle type.">
+  <title>Vehicles | DriveSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo-link" href="index.html" aria-label="DriveSpace home"><img src="assets/logo.svg" alt="DriveSpace"></a>
+    <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false">Menu</button>
+    <nav aria-label="Main navigation"><ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li><li><a href="vehicles.html" aria-current="page">Vehicles</a></li><li><a href="configurator.html">Configurator</a></li><li><a href="compare.html">Compare</a></li><li><a href="finance.html">Finance</a></li><li><a class="nav-cta" href="book.html">Book Test Drive</a></li>
+    </ul></nav>
+  </div>
+</header>
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Vehicle catalogue</p>
+        <h1>Find the right electric or hybrid vehicle.</h1>
+        <p>Use the filters to reduce the number of vehicles and compare only the cars that match your needs.</p>
+      </div>
+
+      <!-- Filter controls for the vehicle catalogue -->
+      <form class="filters" aria-label="Vehicle filters" onsubmit="return false;">
+        <div class="form-group">
+          <label for="searchInput">Search</label>
+          <input id="searchInput" type="search" placeholder="Search by model or body style">
+        </div>
+        <div class="form-group">
+          <label for="typeFilter">Vehicle type</label>
+          <select id="typeFilter"><option>All</option><option>Electric</option><option>Hybrid</option></select>
+        </div>
+        <div class="form-group">
+          <label for="priceFilter">Max price</label>
+          <select id="priceFilter"><option value="999999">Any price</option><option value="30000">Up to £30,000</option><option value="35000">Up to £35,000</option><option value="40000">Up to £40,000</option><option value="50000">Up to £50,000</option></select>
+        </div>
+        <div class="form-group">
+          <label for="rangeFilter">Minimum range</label>
+          <select id="rangeFilter"><option value="0">Any range</option><option value="250">250+ miles</option><option value="300">300+ miles</option><option value="350">350+ miles</option></select>
+        </div>
+        <div class="form-group">
+          <label for="sortFilter">Sort by</label>
+          <select id="sortFilter"><option value="featured">Featured</option><option value="priceLow">Lowest price</option><option value="priceHigh">Highest price</option><option value="rangeHigh">Longest range</option></select>
+        </div>
+      </form>
+
+      <p id="resultCount" class="notice" aria-live="polite">Showing 4 vehicles</p>
+      <div class="vehicle-grid" id="vehicleGrid">
+<article class="vehicle-card">
+      <img src="assets/car-aurora.svg" alt="Aurora E1 electric vehicle">
+      <div class="vehicle-card-body">
+        <h3>Aurora E1</h3>
+        <p class="muted">SUV designed for modern EV and hybrid buyers.</p>
+        <div class="spec-row"><span class="badge">Electric</span><span class="badge">310 miles</span><span class="badge">From £38,990</span></div>
+        <div class="actions"><a class="btn btn-dark" href="configurator.html?car=aurora">Configure</a><button class="btn btn-light" data-compare="aurora">Add to compare</button></div>
+      </div>
+    </article>
+<article class="vehicle-card">
+      <img src="assets/car-nova.svg" alt="Nova Hybrid hybrid vehicle">
+      <div class="vehicle-card-body">
+        <h3>Nova Hybrid</h3>
+        <p class="muted">Family car designed for modern EV and hybrid buyers.</p>
+        <div class="spec-row"><span class="badge">Hybrid</span><span class="badge">560 miles</span><span class="badge">From £28,990</span></div>
+        <div class="actions"><a class="btn btn-dark" href="configurator.html?car=nova">Configure</a><button class="btn btn-light" data-compare="nova">Add to compare</button></div>
+      </div>
+    </article>
+<article class="vehicle-card">
+      <img src="assets/car-pulse.svg" alt="Pulse R electric vehicle">
+      <div class="vehicle-card-body">
+        <h3>Pulse R</h3>
+        <p class="muted">Hatchback designed for modern EV and hybrid buyers.</p>
+        <div class="spec-row"><span class="badge">Electric</span><span class="badge">265 miles</span><span class="badge">From £31,990</span></div>
+        <div class="actions"><a class="btn btn-dark" href="configurator.html?car=pulse">Configure</a><button class="btn btn-light" data-compare="pulse">Add to compare</button></div>
+      </div>
+    </article>
+<article class="vehicle-card">
+      <img src="assets/car-summit.svg" alt="Summit X electric vehicle">
+      <div class="vehicle-card-body">
+        <h3>Summit X</h3>
+        <p class="muted">Estate designed for modern EV and hybrid buyers.</p>
+        <div class="spec-row"><span class="badge">Electric</span><span class="badge">365 miles</span><span class="badge">From £46,990</span></div>
+        <div class="actions"><a class="btn btn-dark" href="configurator.html?car=summit">Configure</a><button class="btn btn-light" data-compare="summit">Add to compare</button></div>
+      </div>
+    </article>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><img src="assets/logo.svg" alt="DriveSpace" style="width:160px"><p>Electric and hybrid vehicle showroom.</p></div><div><h3>Explore</h3><p><a href="index.html">Home</a></p><p><a href="compare.html">Compare</a></p></div><div><h3>Tools</h3><p><a href="configurator.html">Configurator</a></p><p><a href="finance.html">Finance</a></p></div><div><h3>Support</h3><p><a href="contact.html">Contact</a></p><p><a href="book.html">Book test drive</a></p></div></div>  <p class="footer-credit">Made by Mohammed Msadek</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

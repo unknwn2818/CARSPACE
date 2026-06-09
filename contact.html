@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact DriveSpace about electric and hybrid vehicles, finance or test drives.">
+  <title>Contact | DriveSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header"><div class="container navbar"><a class="logo-link" href="index.html"><img src="assets/logo.svg" alt="DriveSpace"></a><button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false">Menu</button><nav aria-label="Main navigation"><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="vehicles.html">Vehicles</a></li><li><a href="configurator.html">Configurator</a></li><li><a href="compare.html">Compare</a></li><li><a href="finance.html">Finance</a></li><li><a class="nav-cta" href="book.html">Book Test Drive</a></li></ul></nav></div></header>
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Contact DriveSpace</p>
+        <h1>Ask a question before visiting.</h1>
+        <p>This page gives users another route to make contact if they are not ready to book a test drive.</p>
+      </div>
+      <div class="builder">
+        <form class="form-shell" id="contactForm" aria-label="Contact form">
+          <!-- Contact form keeps data entry short and uses required fields -->
+          <div class="form-group"><label for="contactName">Full name</label><input id="contactName" type="text" required autocomplete="name"></div>
+          <div class="form-group"><label for="contactEmail">Email address</label><input id="contactEmail" type="email" required autocomplete="email"></div>
+          <div class="form-group"><label for="contactTopic">Topic</label><select id="contactTopic"><option>Vehicle information</option><option>Finance question</option><option>Accessibility support</option><option>Test drive question</option></select></div>
+          <div class="form-group"><label for="contactMessage">Message</label><textarea id="contactMessage" required></textarea></div>
+          <button class="btn btn-primary" type="submit">Send enquiry</button>
+        </form>
+        <aside class="card">
+          <h2>Showroom details</h2>
+          <p><strong>Address:</strong> DriveSpace, Manchester Innovation Park</p>
+          <p><strong>Email:</strong> enquiries@drivespace.example</p>
+          <p><strong>Opening times:</strong> Monday to Saturday, 9:00 to 18:00</p>
+          <p class="notice success" id="contactResult" hidden></p>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><img src="assets/logo.svg" alt="DriveSpace" style="width:160px"><p>Clear contact routes support user confidence.</p></div><div><h3>Explore</h3><p><a href="vehicles.html">Vehicles</a></p></div><div><h3>Tools</h3><p><a href="finance.html">Finance</a></p><p><a href="book.html">Booking</a></p></div><div><h3>Support</h3><p><a href="index.html">Home</a></p></div></div>  <p class="footer-credit">Made by Mohammed Msadek</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
