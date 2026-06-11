@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="506" viewBox="0 0 900 506" role="img" aria-label="Aurora E1 vehicle illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0d1b2a"/>
+      <stop offset="1" stop-color="#13283f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="506" fill="url(#bg)"/>
+  <circle cx="760" cy="92" r="120" fill="#00c8ff" opacity="0.14"/>
+  <text x="56" y="78" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff">Aurora E1</text>
+  <text x="56" y="112" font-family="Arial, sans-serif" font-size="18" fill="#c7d7e8">DriveSpace electric and hybrid range</text>
+  <g filter="url(#shadow)">
+    <path d="M190 315 C220 240 310 203 418 203 L510 203 C618 203 710 240 748 315 L777 315 C805 315 828 338 828 366 L828 381 L76 381 L76 363 C76 336 98 315 126 315 Z" fill="#1d4ed8"/>
+    <path d="M330 218 L430 218 L430 292 L238 292 C256 252 285 230 330 218 Z" fill="#b9e7ff" opacity="0.9"/>
+    <path d="M454 218 L522 218 C590 218 650 245 690 292 L454 292 Z" fill="#b9e7ff" opacity="0.9"/>
+    <rect x="150" y="330" width="580" height="22" rx="11" fill="#00c8ff" opacity="0.9"/>
+    <circle cx="232" cy="382" r="58" fill="#0b1220"/>
+    <circle cx="232" cy="382" r="27" fill="#e5e7eb"/>
+    <circle cx="674" cy="382" r="58" fill="#0b1220"/>
+    <circle cx="674" cy="382" r="27" fill="#e5e7eb"/>
+  </g>
+</svg>

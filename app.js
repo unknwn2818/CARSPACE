@@ -101,7 +101,7 @@ function vehicleCard(vehicle, showCompare = true) {
           <span class="badge">From ${money(vehicle.price)}</span>
         </div>
         <div class="actions">
-          <a class="btn btn-dark" href="configurator.html?car=${vehicle.id}">Configure</a>
+          <a class="btn btn-dark" href="configurator.html">Configure ${vehicle.name}</a>
           ${compareButton}
         </div>
       </div>

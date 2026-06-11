@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="70" viewBox="0 0 260 70" role="img" aria-label="DriveSpace logo">
+  <rect width="260" height="70" rx="12" fill="#0d1b2a"/>
+  <path d="M22 42 L38 20 H52 L36 42 Z" fill="#00c8ff"/>
+  <path d="M46 42 L62 20 H76 L60 42 Z" fill="#7dd3fc"/>
+  <text x="88" y="43" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">DRIVE</text>
+  <text x="170" y="43" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#00c8ff">SPACE</text>
+</svg>
